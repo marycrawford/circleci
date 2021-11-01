@@ -24,19 +24,13 @@ jobs:
       - image: cimg/base:stable
     steps:
       - checkout
-      # - run:
-      #     name: Setup VirtualEnv
-      #     command: |
-      #       virtualenv helloworld
-      #       . helloworld/bin/activate
-      # - run:
-      #     name: Run Tests
-      #     command: |
-      #       . helloworld/bin/activate
-      # - setup_remote_docker:
-      #     docker_layer_caching: true
-      # - run:
-      #     name: Build Docker image
-      #     command: |
-      #       . helloworld/bin/activate
-    
+  
+  test: 
+    - run:
+      name: Run Tests
+      command:
+        - run test.js
+
+      - setup_remote_docker:
+        docker_layer_caching: true
+      
