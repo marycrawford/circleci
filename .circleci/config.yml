@@ -24,9 +24,9 @@ jobs:
     steps:
       - checkout
       - run:
-        name: Run Tests
-        command: javascript test.js
+          name: Run Tests
+          command: javascript test.js
 
       - setup_remote_docker:
-        docker_layer_caching: true
+          docker_layer_caching: true
       
