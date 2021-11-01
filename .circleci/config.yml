@@ -25,7 +25,7 @@ jobs:
       - checkout
       - run:
           name: Run Tests
-          command: circleci test test.js
+          command: circleci tests test.js
 
       # - setup_remote_docker:
       #     docker_layer_caching: true
