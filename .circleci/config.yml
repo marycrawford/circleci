@@ -12,12 +12,6 @@ jobs:
       - image: cimg/base:stable
     steps:
       - checkout
-      - run: 
-          name: Setting Up
-          command: |
-            node --version
-            npm install
-      - run:
-          name: Run tests
-          command: npm test
+      - run: npm install
+      - run: npm test
       
