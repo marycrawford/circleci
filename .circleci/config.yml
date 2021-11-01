@@ -15,7 +15,7 @@ workflows:
   ci:
     jobs:
       - build
-      # - test
+      - test
    
 jobs:
   build:
@@ -26,10 +26,9 @@ jobs:
       - checkout
   
   test: 
-    - run:
-      name: Run Tests
-      command:
-        - run test.js
+    steps:
+      - image: cimg/base:stable
+      - run: javascript test.js
 
       - setup_remote_docker:
         docker_layer_caching: true
