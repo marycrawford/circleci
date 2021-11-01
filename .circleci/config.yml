@@ -20,8 +20,8 @@ workflows:
 jobs:
   build:
     docker:
-      # using a nginx image 
-      - image: circleci/nginx:alpine
+      # using a base image 
+      - image: cimg/base:stable
     steps:
       - checkout
       # - run:
