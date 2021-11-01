@@ -1,0 +1,22 @@
+{
+  "name": "circleci",
+  "version": "2.1.0",
+  "description": "CircleCi Challenge Button Changes Text",
+  "main": "test.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marycrawford/circleci.git"
+  },
+  "author": "mcrawford",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marycrawford/circleci/issues"
+  },
+  "homepage": "https://github.com/marycrawford/circleci#readme",
+  "keywords": [
+    "test"
+  ]
+}

@@ -1,16 +1,5 @@
 version: 2.1
 
-# orbs:
-#    spellcheck: circleci/spellcheck@1.2.0
-  #  slack: circleci/slack@1.2.0
-   
-# commands:
-#   slack-notify-on-failure:
-#     steps:
-#       -slack/status:
-#         fail_only = "true"
-        # only_for_branch: "master"
-
 workflows:
   ci:
     jobs:
@@ -23,10 +12,12 @@ jobs:
       - image: cimg/base:stable
     steps:
       - checkout
+      - run: 
+          name: Setting Up
+          command: |
+            node --version
+            npm install
       - run:
-          name: Run Tests
-          command: circleci tests test.js
-
-      # - setup_remote_docker:
-      #     docker_layer_caching: true
+          name: Run tests
+          command: npm test
       
