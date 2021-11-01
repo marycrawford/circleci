@@ -14,10 +14,10 @@ version: 2.1
 workflows:
   ci:
     jobs:
-      - build
+      - build-and-test
    
 jobs:
-  build:
+  build-and-test:
     docker:
       # using a base image 
       - image: cimg/base:stable
@@ -25,7 +25,7 @@ jobs:
       - checkout
       - run:
           name: Run Tests
-          command: javascript test.js
+          command: circleci test test.js
 
       # - setup_remote_docker:
       #     docker_layer_caching: true
