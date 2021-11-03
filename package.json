@@ -7,7 +7,7 @@
     "test": "jest"
   },
   "jest": {
-    "collectCoverage": false
+    "collectCoverage": true
   },
   "repository": {
     "type": "git",
