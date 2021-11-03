@@ -6,6 +6,9 @@
   "scripts": {
     "test": "jest"
   },
+  "jest": {
+    "collectCoverage": true
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/marycrawford/circleci.git"
@@ -18,5 +21,8 @@
   "homepage": "https://github.com/marycrawford/circleci#readme",
   "keywords": [
     "test"
-  ]
+  ],
+  "devDependencies": {
+    "@types/node": "^16.11.6"
+  }
 }
