@@ -1,4 +1,4 @@
-// import Button from webpage.html file
+// import button file
 const functions = require('./button');
 
 
