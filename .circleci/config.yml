@@ -15,7 +15,21 @@ jobs:
       - run: 
           name: Run Tests
           command: 
+            circleci tests button.test.js
+
+
+
             # use sudo to install on docker with non-root user
-            sudo apt-get install npm
-            # npm run test 
+            # sudo apt-get install npm
+            # NOTE: ERROR for ^^^ script
+              #!/bin/bash -eo pipefail
+              # sudo apt-get install npm
+              # Reading package lists... Done
+              # Building dependency tree       
+              # Reading state information... Done
+              # E: Unable to locate package npm
+
+              # Exited with code exit status 100
+              # CircleCI received exit code 100
+           
       
