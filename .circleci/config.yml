@@ -16,5 +16,5 @@ jobs:
           name: Run Tests
           command: 
             npm install
-            circleci tests button.js 
+            circleci tests button.test.js 
       
