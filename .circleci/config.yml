@@ -12,6 +12,9 @@ jobs:
       - image: cimg/base:stable
     steps:
       - checkout
-      - run: npm install
-      - run: npm test
+      - run: 
+        name: Run Tests
+        command: 
+          npm install
+          circleci tests button.js 
       
