@@ -1,6 +1,6 @@
 // function to test the click of the button
-function testClick(message1: string, message2: string): string {
+function testClickButton(message1 = "Hello", message2 = "Goodbye") {
     return message2
 }
 
-module.exports = testClick
+module.exports = testClickButton
